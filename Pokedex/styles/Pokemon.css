@@ -1,0 +1,291 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: url("../img/pokemon-bg.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#content_box {
+    display: flex;
+    width: 800px;
+    height: 800px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    margin: 0 auto;
+    background: url("../img/pokeball.jpg") no-repeat;
+    background-size: cover;
+}
+
+#Pokemon_info {
+    padding: 12px;
+    margin: 30px;
+    width: 650px;
+    height: 500px;
+    text-align: center;
+}
+
+#pokemon_list {
+    width: 350px;
+    height: 800px;
+    font-size: 18px;
+    overflow-y: auto;
+    text-align: center;
+}
+
+button {
+    position: absolute;
+    height: 60px;
+    width: 100px;
+    border: solid 1px black;
+    border-radius: 20px 0px 20px 0px;
+}
+
+button:hover {
+    background: rgb(170, 166, 166);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 10px;
+    background: white;
+}
+
+.pokemon-name {
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 5px;
+}
+
+#Pokemon_info img {
+    padding: 12px;
+    width: 160px;
+    height: 160px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: white;
+}
+
+#pokemon_decription {
+    width: 300px;
+    height: 130px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 18px;
+    overflow-y: auto;
+}
+
+#pokemon_decription:hover {
+    overflow-y: auto;
+    text-overflow: initial;
+}
+
+#pokemon_decription:hover::-webkit-scrollbar {
+    width: 10px;
+}
+
+#pokemon_types {
+    margin-top: 10px;
+}
+
+.type-box {
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+.stats {
+    background: white;
+    border: solid 1px black;
+    border-radius: 20px;
+    width: 312px;
+    height: 200px;
+    text-align: center;
+    margin-top: 10px;
+    overflow-y: hidden;
+    display: inline-block;
+}
+
+.stats::-webkit-scrollbar {
+    width: 10px;
+}
+
+table {
+    padding: 8px;
+    width: 100%;
+}
+
+td {
+    max-width: 75%;
+}
+
+tr.base_stats {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+tr {
+    margin: 2px;
+    display: flex;
+    justify-content: space-between;
+}
+
+tr.statnames {
+    display: flex;
+    flex-direction: column;
+}
+
+th.thUpper {
+    font-size: 20px !important;
+}
+
+th {
+    font-size: 16px;
+}
+
+.fire {
+    border: solid 1px;
+    border-radius: 20px;
+    background-color: orange;
+    color: white;
+}
+
+.grass {
+    background-color: green;
+    color: white;
+}
+
+.water {
+    background-color: blue;
+    color: white;
+}
+
+.ice {
+    background-color: lightblue;
+    color: black;
+}
+
+.electric {
+    background-color: gold;
+    color: black;
+}
+
+.fighting {
+    background-color: darkred;
+    color: white;
+}
+
+.normal {
+    background-color: rgb(107, 107, 107);
+    color: white;
+}
+
+.flying {
+    background-color: skyblue;
+    color: black;
+}
+
+.bug {
+    background-color: yellowgreen;
+    color: white;
+}
+
+.ghost {
+    background-color: purple;
+    color: white;
+}
+
+.rock {
+    background-color: sienna;
+    color: white;
+}
+
+.ground {
+    background-color: burlywood;
+    color: black;
+}
+
+.steel {
+    background-color: silver;
+    color: black;
+}
+
+.dark {
+    background-color: darkgray;
+    color: white;
+}
+
+.psychic {
+    background-color: palevioletred;
+    color: white;
+}
+
+.fairy {
+    background-color: pink;
+    color: black;
+}
+
+.dragon {
+    background-color: teal;
+    color: white;
+}
+
+.poison {
+    background-color: darkviolet;
+    color: white;
+}
+
+#hp {
+    border: solid 1px;
+    border-radius: 20px;
+    background-color: rgb(206, 51, 51);
+    transition: 300ms;
+}
+
+#def {
+    border: solid 1px;
+    border-radius: 20px;
+    background-color: rgb(107, 107, 214);
+    transition: 300ms;
+}
+
+#atk {
+    border: solid 1px;
+    border-radius: 20px;
+    background-color: rgb(218, 122, 44);
+    transition: 300ms;
+}
+
+#spatk {
+    border: solid 1px;
+    border-radius: 20px;
+    background-color: rgb(201, 159, 80);
+    transition: 300ms;
+}
+
+#spdef {
+    border: solid 1px;
+    border-radius: 20px;
+    background-color: rgb(121, 209, 121);
+    transition: 300ms;
+}
+
+#init {
+    border: solid 1px;
+    border-radius: 20px;
+    background-color: rgb(178, 194, 207);
+    transition: 300ms;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Pokedex/styles/Pokemon.css">
+    <link rel="stylesheet" href="../Pokedex/styles/Responsive.css">
+
+
+    <title>Pokedex</title>
+</head>
+
+<body>
+    <h1 style="text-align:center ;"> Pokedex</h1>
+
+    <div class="content_box" id="content_box">
+        <div class="Pokemon_info" id="Pokemon_info">
+            <img id="Pokemon_img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png">
+            <div class="pokemon_types" id="pokemon_types">
+                <span class="type-box grass">GRASS</span>
+                <span class="type-box poison">POISON</span>
+            </div>
+            <div class="pokemon_decription" id="pokemon_decription">BULBASAUR can be seen napping in bright <br> sunlight. There is a seed on its back. <br> By soaking up the sun’s rays, the seed grows progressively larger.</div>
+            <div class="stats">
+                <table>
+                    <tr>
+                        <th class="thUpper">Stats</th>
+                        <th class="thUpper">Base Stat</th>
+                    </tr>
+                    <tr>
+                        <tr class="base_stats">
+                            <tr>
+                                <th>HP</th>
+                                <td id="hp" class="hp" style="width:45% ;">45</td>
+                            </tr>
+                            <tr>
+                                <th>ATK</th>
+                                <td id="atk" class="atk" style="width:49%;">49</td>
+                            </tr>
+                            <tr>
+                                <th>DEF</th>
+                                <td id="def" class="def" style="width:49%;">49</td>
+                            </tr>
+                            <tr>
+                                <th>SP ATK</th>
+                                <td id="spatk" class="spatk" style="width:65%;">65</td>
+                            </tr>
+                            <tr>
+                                <th>SP DEF</th>
+                                <td id="spdef" class="spdef" style="width:65%;">65</td>
+                            </tr>
+                            <tr>
+                                <th>INIT</th>
+                                <td id="init" class="init" style="width:45%;">45</td>
+                            </tr>
+
+                        </tr>
+                    </tr>
+
+                </table>
+
+            </div>
+
+        </div>
+        <button onclick="loadMore()">Loadmore</button>
+
+        <div class="pokemon_list" id="pokemon_list"> </div>
+
+    </div>
+
+
+
+
+</body>
+<script src="../Pokedex/scripts/Pokemon.js"></script>
+
+</html>
